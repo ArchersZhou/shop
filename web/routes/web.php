@@ -17,5 +17,15 @@ Route::get('/login', function () {
 });
 Route::group(['prefix'=>'/admin'],function(){
    Route::get('/index','Admin\IndexController@index');
-
+    Route::get('/login','Admin\IndexController@login');
+    Route::get('/home','Admin\IndexController@home');
+    Route::get('/Account_Details','Admin\IndexController@Account_Details');
+    Route::get('/Add_Brand','Admin\IndexController@Add_Brand');
+    Route::get('/admin_Competence','Admin\IndexController@admin_Competence');
+    Route::get('/admin_info','Admin\IndexController@admin_info');
+    Route::get('/administrator','Admin\IndexController@administrator');
+    Route::get('/Ads_list','Admin\IndexController@Ads_list');
+    Route::get('/advertising','Admin\IndexController@advertising');
+    Route::get('/Amounts','Admin\IndexController@Amounts');
+    //
 });
